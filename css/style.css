@@ -37,3 +37,14 @@
   display: inline-block;
   vertical-align: middle;
 }
+
+.collection .collection-item.avatar.avatar-lab1:not(.circle-clipper) > .circle,
+.collection .collection-item.avatar.avatar-lab1:not(.circle-clipper) > .circle {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  left: 15px;
+  display: inline-block;
+  vertical-align: middle;
+}
