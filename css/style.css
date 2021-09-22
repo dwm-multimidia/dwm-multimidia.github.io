@@ -48,3 +48,25 @@
   display: inline-block;
   vertical-align: middle;
 }
+
+.esquerda {
+  width: 35%;
+  float: left;
+}
+
+.direita {
+  padding-top: 3%;
+  margin-left: 15%;
+}
+
+.master_musica{
+  text-align:center;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.bloco_musica {
+  width: 30%;
+  display: inline-block;
+  vertical-align:top;
+}
