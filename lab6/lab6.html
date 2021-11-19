@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Laboratório 4</title>
+    <title>Laboratório 6</title>
     <meta
       name="description"
       content="Site utilizado para repositórios dos laboratórios da disciplina de Multimidia."
@@ -62,15 +62,14 @@
           <h3 class="header">PDS Voz</h3>
         </center>
 
-        <center>
-          OBS: Esta página ainda está em desenvolvimento no momento. Previsão para conclusão ao fim da tarde de hoje (18/11).
-        </center>
 
-        <center>
-          <p>Neste laboratório, a equipe utilizou um conjunto de áudios gravados para realizar <br> análises de processamento digital de sinais em espectros de voz.</p>
+
+        
+          <p>Neste laboratório, a equipe utilizou um conjunto de áudios gravados para realizar análises de processamento digital de sinais em espectros de voz.</p>
          
           
-        </center>
+        
+
 
 
         <p> Abaixo, exibe-se o Jupyter elaborado pela equipe. Caso tenha problemas para carregá-lo, <a href="https://github.com/dwm-multimidia/dwm-multimidia.github.io/blob/master/lab6/jupyter/Lab6_PDS_Voz.ipynb">clique aqui</a>.
@@ -80,7 +79,155 @@
           <script src="https://gist.github.com/Mathcd/9a06503f52a1c553a63819f979dfbd5b.js"></script>  
         </center>
 
+
+
+        <h4 style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-family:"Calibri",sans-serif;'><span style="font-family: Calibri, sans-serif;">1. Grava&ccedil;&atilde;o dos arquivos de &aacute;udio</span></h4>
+<p style="margin: 0cm 0cm 8pt; line-height: 107%; font-size: 15px; font-family: Calibri, sans-serif; text-align: justify;"><span style="font-family: Calibri, sans-serif;">Inicialmente foi realizada a captura de &aacute;udio utilizando o software Audacity, por cada um dos integrantes do grupo. Para que fosse manter um padr&atilde;o que permitisse a posterior compara&ccedil;&atilde;o dos resultados, foi definido um script com o que seria gravado em cada uma das quatro categorias, de modo que os 3 membros da equipe gravaram os &aacute;udios com o mesmo conte&uacute;do. Essas foram as grava&ccedil;&otilde;es:</span></p>
+<ol class="decimal_type" style="list-style-type: decimal;">
+    <li style="text-align: justify; font-family: Calibri, sans-serif;">D&iacute;gitos: d&iacute;gitos de 0 a 9, pronunciados separada e pausadamente<br><br></li>
+    <li style="text-align: justify; font-family: Calibri, sans-serif;">N&uacute;mero de telefone: n&uacute;mero de telefone no formato (11) XXXX-XXXX.<br><br></li>
+    <li style="text-align: justify; font-family: Calibri, sans-serif;">Texto lido: Trecho retirado do projeto pedag&oacute;gico do curso de Engenharia de Informa&ccedil;&atilde;o da UFABC: &ldquo;<em>O Engenheiro de Informa&ccedil;&atilde;o &eacute; o profissional com s&oacute;lido conhecimento cient&iacute;fico e tecnol&oacute;gico para atuar no projeto, an&aacute;lise, desenvolvimento ou implanta&ccedil;&atilde;o de servi&ccedil;os ou sistemas respons&aacute;veis pela gera&ccedil;&atilde;o, processamento, transmiss&atilde;o, recep&ccedil;&atilde;o, apresenta&ccedil;&atilde;o, armazenamento e seguran&ccedil;a da informa&ccedil;&atilde;o atrav&eacute;s dos diferentes tipos de redes de comunica&ccedil;&atilde;o globais</em>.&rdquo;<br><br></li>
+    <li style="text-align: justify; font-family: Calibri, sans-serif;">Poesia declamada: recita&ccedil;&atilde;o dos versos da can&ccedil;&atilde;o Vambora (Adriana Calcanhoto) em forma de poesia:</li>
+</ol>
+<p style="margin: 0cm 0cm 0.0001pt 18pt; line-height: 107%; font-size: 15px; font-family: Calibri, sans-serif; text-align: center;"><span style="font-family: Calibri, sans-serif;">&ldquo;Entre por essa porta agora</span></p>
+<p style="margin: 0cm 0cm 0.0001pt 18pt; line-height: 107%; font-size: 15px; font-family: Calibri, sans-serif; text-align: center;"><span style="font-family: Calibri, sans-serif;">E diga que me adora</span></p>
+<p style="margin: 0cm 0cm 0.0001pt 18pt; line-height: 107%; font-size: 15px; font-family: Calibri, sans-serif; text-align: center;"><span style="font-family: Calibri, sans-serif;">Voc&ecirc; tem meia hora</span></p>
+<p style="margin: 0cm 0cm 0.0001pt 18pt; line-height: 107%; font-size: 15px; font-family: Calibri, sans-serif; text-align: center;"><span style="font-family: Calibri, sans-serif;">Pra mudar a minha vida</span></p>
+<p style="margin: 0cm 0cm 0.0001pt 18pt; line-height: 107%; font-size: 15px; font-family: Calibri, sans-serif; text-align: center;"><span style="font-family: Calibri, sans-serif;">Vem, vambora</span></p>
+<p style="margin: 0cm 0cm 0.0001pt 18pt; line-height: 107%; font-size: 15px; font-family: Calibri, sans-serif; text-align: center;"><span style="font-family: Calibri, sans-serif;">Que o que voc&ecirc; demora</span></p>
+<p style="margin: 0cm 0cm 0.0001pt 18pt; line-height: 107%; font-size: 15px; font-family: Calibri, sans-serif; text-align: center;"><span style="font-family: Calibri, sans-serif;">&Eacute; o que o tempo leva&rdquo;</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:18.0pt;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-family: Calibri, sans-serif;">&nbsp;</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:18.0pt;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-family: Calibri, sans-serif;">&nbsp;</span></p>
+<h4 style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-family:"Calibri",sans-serif;'><span style="font-family: Calibri, sans-serif;">2. Leitura dos arquivos e janelamento</span></h4>
+<p style="margin: 0cm 0cm 8pt; line-height: 107%; font-size: 15px; font-family: Calibri, sans-serif; text-align: justify;"><span style="font-family: Calibri, sans-serif;">Nessa etapa os arquivos gravados foram importados como vetores utilizando a biblioteca Librosa, bem como sua respectiva taxa de amostragem. A seguir s&atilde;o apresentados os plots dos sinais de &aacute;udio no tempo para cada uma das grava&ccedil;&otilde;es.</span></p>
+
+<center>
+  <img src="images/1.png"/><br/>
+  <img src="images/2.png"/><br/>
+  <img src="images/3.png"/><br/>
+
+  <img src="images/4.png"/><br/>
+  <img src="images/5.png"/><br/>
+  <img src="images/6.png"/><br/>
+
+  <img src="images/7.png"/><br/>
+  <img src="images/8.png"/><br/>
+  <img src="images/9.png"/><br/>
+
+  <img src="images/10.png"/><br/>
+  <img src="images/11.png"/><br/>
+  <img src="images/12.png"/><br/>
+</center>
+
+
+<p style="margin: 0cm 0cm 8pt; line-height: 107%; font-size: 15px; font-family: Calibri, sans-serif; text-align: justify;"><span style="font-family: Calibri, sans-serif;">Conforme &eacute; poss&iacute;vel observar, apesar de n&atilde;o serem id&ecirc;nticos entre si, &eacute; poss&iacute;vel verificar uma significativa correla&ccedil;&atilde;o entre os gr&aacute;ficos de uma mesma grava&ccedil;&atilde;o feita por diferentes integrantes. H&aacute; expans&otilde;es e contra&ccedil;&otilde;es no dom&iacute;nio do tempo, associadas &agrave; velocidade que cada locutor pronunciou seu script, e tamb&eacute;m na amplitude, tendo em vista o fato de os ambientes serem diferentes, e, portanto, possuindo diferentes caracter&iacute;sticas ac&uacute;sticas, especialmente ru&iacute;do de fundo, bem como &agrave; qualidade dos microfones utilizados para captura.</span></p>
+<p style="margin: 0cm 0cm 8pt; line-height: 107%; font-size: 15px; font-family: Calibri, sans-serif; text-align: justify;"><span style="font-family: Calibri, sans-serif;">Na sequ&ecirc;ncia, foi plotada a Janela de Hamming, conforme apresentada na figura a seguir.</span></p>
+
+<center>
+  <img src="images/13.png"/><br/>
+</center>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-family: Calibri, sans-serif;">&nbsp;&nbsp;</span></p>
+<h4 style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-family:"Calibri",sans-serif;'><span style="font-family: Calibri, sans-serif;">3. Energia de Tempo Curto</span></h4>
+<p style="margin: 0cm 0cm 8pt; line-height: 107%; font-size: 15px; font-family: Calibri, sans-serif; text-align: justify;"><span style="font-family: Calibri, sans-serif;">Nesta etapa, deu-se in&iacute;cio &agrave;s an&aacute;lises nos sinais de &aacute;udio, a partir de uma perspectiva mais voltada para processamento digital de sinais. Inicialmente foi determinado o contorno de energia para 3 grupos dos &aacute;udios capturados (d&iacute;gitos, voz falada e poema), as quais s&atilde;o apresentadas em fun&ccedil;&atilde;o dos segmentos, conforme apresentado nas figuras a seguir.</span></p>
+
+<center>
+  <img src="images/14.png"/><br/>
+  <img src="images/15.png"/><br/>
+  <img src="images/16.png"/><br/>
+
+  <img src="images/17.png"/><br/>
+  <img src="images/18.png"/><br/>
+  <img src="images/19.png"/><br/>
+
+  <img src="images/20.png"/><br/>
+  <img src="images/21.png"/><br/>
+  <img src="images/22.png"/><br/>
+</center>
+
+<p style="margin: 0cm 0cm 8pt; line-height: 107%; font-size: 15px; font-family: Calibri, sans-serif; text-align: justify;"><span style="font-family: Calibri, sans-serif;">Analisando os gr&aacute;ficos de energia, &eacute; poss&iacute;vel verificar que tamb&eacute;m h&aacute; uma correla&ccedil;&atilde;o entre as grava&ccedil;&otilde;es dos 3 membros do grupo, entretanto, nas grava&ccedil;&otilde;es realizadas pelo Dimitri e Matheus &eacute; poss&iacute;vel observar que a energia ao longo dos segmentos est&aacute; bem distribu&iacute;da entre aproximadamente 0 e 40 dB, enquanto nas grava&ccedil;&otilde;es do William, &eacute; de 0 dB no in&iacute;cio e, ao longo dos segmentos, se distribui entre 40 e 80 dB. Essas caracter&iacute;sticas podem estar associadas ao fato de as grava&ccedil;&otilde;es realizadas pelo William possu&iacute;rem um pequeno delay antes de iniciar de fato, bem como ele ter sido o &uacute;nico que utilizou o microfone de u headset (os demais membros utilizaram o microfone integrado do notebook).</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-family: Calibri, sans-serif;">&nbsp;</span></p>
+<h4 style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-family:"Calibri",sans-serif;'><span style="font-family: Calibri, sans-serif;">4. Espectrogramas</span></h4>
+<p style="margin: 0cm 0cm 8pt; line-height: 107%; font-size: 15px; font-family: Calibri, sans-serif; text-align: justify;"><span style="font-family: Calibri, sans-serif;">Nesta etapa, foram gerados e analisados os espectrogramas gerados a partir dos sinais gravados, novamente para os d&iacute;gitos, voz falada e poema declamado. Os resultados s&atilde;o apresentados a seguir.</span></p>
+
+<center>
+  <img src="images/23.png"/><br/>
+  <img src="images/24.png"/><br/>
+  <img src="images/25.png"/><br/>
+
+  <img src="images/26.png"/><br/>
+  <img src="images/27.png"/><br/>
+  <img src="images/28.png"/><br/>
+
+  <img src="images/29.png"/><br/>
+  <img src="images/30.png"/><br/>
+  <img src="images/31.png"/><br/>
+</center>
+
+<p style="margin: 0cm 0cm 8pt; line-height: 107%; font-size: 15px; font-family: Calibri, sans-serif; text-align: justify;"><span style="font-family: Calibri, sans-serif;">Visualizando os espectrogramas, &eacute; poss&iacute;vel identificar claramente os momentos de fala e de sil&ecirc;ncio, especialmente nas grava&ccedil;&otilde;es dos d&iacute;gitos e do poema, tendo em vista que h&aacute; pausas mais bem definidas &ndash; entre os n&uacute;meros e versos, respectivamente &ndash; que permitem, inclusive, associar cada feixe vertical a seu respectivo n&uacute;mero ou verso, correspondentes aos segmentos de maior intensidade ao longo do tempo. Al&eacute;m disso, tamb&eacute;m &eacute; poss&iacute;vel verificar que os espectrogramas obtidos do Dimitri n&atilde;o s&atilde;o t&atilde;o n&iacute;tidos quanto aos do Matheus e do William. Isso se deve ao fato do seu microfone inserir ru&iacute;do branco em todo o espectro do sinal capturado, algo que pode ser constatado empiricamente ao ouvir os &aacute;udios gravados.</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;text-indent:35.4pt;'><span style="font-family: Calibri, sans-serif;">&nbsp;</span></p>
+<h4 style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-family:"Calibri",sans-serif;'><span style="font-family: Calibri, sans-serif;">5. Pitch e F0.</span></h4>
+<p style="margin: 0cm 0cm 8pt; line-height: 107%; font-size: 15px; font-family: Calibri, sans-serif; text-align: justify;"><span style="font-family: Calibri, sans-serif;">Nesta etapa foi obtido o per&iacute;odo de pitch dos sinais por meio da an&aacute;lise entre os picos sucessivos da fun&ccedil;&atilde;o de autocorrela&ccedil;&atilde;o dos sinais, conforme pode ser observado a seguir. Os picos est&atilde;o indicados com &ldquo;x&rdquo; em laranja.</span></p>
+
+<center>
+  <img src="images/32.png"/><br/>
+  <img src="images/33.png"/><br/>
+  <img src="images/34.png"/><br/>
+
+  <img src="images/35.png"/><br/>
+  <img src="images/36.png"/><br/>
+  <img src="images/37.png"/><br/>
+
+  <img src="images/38.png"/><br/>
+  <img src="images/39.png"/><br/>
+  <img src="images/40.png"/><br/>
+</center>
+
+<p style="margin: 0cm 0cm 8pt; line-height: 107%; font-size: 15px; font-family: Calibri, sans-serif; text-align: justify;"><span style="font-family: Calibri, sans-serif;">J&aacute; os quatro primeiros formantes foram obtidos empiricamente a partir dos quatro picos consecutivos dos espectros das vogais /&eacute;/ de &lt;zero&gt;, /in/ de &lt;informa&ccedil;&atilde;o&gt; e /en/ de &lt;entre&gt;, conforme apresentados nas figuras a seguir, destacados em vermelho.</span></p>
+
+<center>
+  <img src="images/41.png"/><br/>
+  <img src="images/42.png"/><br/>
+  <img src="images/43.png"/><br/>
+
+  <img src="images/44.png"/><br/>
+  <img src="images/45.png"/><br/>
+  <img src="images/46.png"/><br/>
+
+  <img src="images/47.png"/><br/>
+  <img src="images/48.png"/><br/>
+  <img src="images/49.png"/><br/>
+</center>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-family: Calibri, sans-serif;">&nbsp;</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-family: Calibri, sans-serif;">As tabelas a seguir re&uacute;nem os dados obtidos graficamente.</span></p>
+
+<center>
+  <img src="images/53.png"/><br/>
+  <img src="images/54.png"/><br/>
+</center>
+
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-family: Calibri, sans-serif;">&nbsp;</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-family: Calibri, sans-serif;">&nbsp;</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;'><span style="font-family: Calibri, sans-serif;">&nbsp;</span></p>
+<h4 style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-family:"Calibri",sans-serif;'><span style="font-family: Calibri, sans-serif;">6. Determina&ccedil;&atilde;o de Consoantes e Plosivos.</span></h4>
+<p style="margin: 0cm 0cm 8pt; line-height: 107%; font-size: 15px; font-family: Calibri, sans-serif; text-align: justify;"><span style="font-family: Calibri, sans-serif;">A partir dos espectrogramas de um trecho das grava&ccedil;&otilde;es dos d&iacute;gitos, mais especificamente entre as falas &ldquo;zero&rdquo; e &ldquo;cinco&rdquo;, foram identificadas as consoantes surda /s/, surda plosiva /t/ e sonora /m/, conforme apresentado nas figuras apresentadas adiante, nas seguintes posi&ccedil;&otilde;es:</span></p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;text-align:center;'><span style="font-family: Calibri, sans-serif;">zero u&lt;m&gt; doi&lt;s&gt; tr&ecirc;s qua&lt;t&gt;ro cinco seis sete oito nove</span></p>
+
+<center>
+  <img src="images/50.png"/><br/>
+  <img src="images/51.png"/><br/>
+  <img src="images/52.png"/><br/>
+</center>
+
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-size:15px;font-family:"Calibri",sans-serif;text-align:center;'><span style="font-family: Calibri, sans-serif;">&nbsp;</span></p>
+<h3 style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-family:"Calibri",sans-serif;'><span style="font-family: Calibri, sans-serif;">Coment&aacute;rios e Conclus&otilde;es</span></h3>
+<p style="margin: 0cm 0cm 8pt; line-height: 107%; font-size: 15px; font-family: Calibri, sans-serif; text-align: justify;"><span style="font-family: Calibri, sans-serif;">[...]</span></p>
+
       </div>
+
     </div>
 
     <!-- your content here... -->
