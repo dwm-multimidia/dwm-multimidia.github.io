@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+  <head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<title>Laboratório 7</title>
+	<meta
+	  name="description"
+	  content="Site utilizado para repositórios dos laboratórios da disciplina de Multimidia."
+	/>
+	<meta name="author" content="Dimitri, Matheus e William" />
+
+	<link rel="icon" href="images/favicon.png" />
+	<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+	<!-- Compiled and minified CSS -->
+	<link
+	  rel="stylesheet"
+	  href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+	/>
+	<link
+	  href="https://fonts.googleapis.com/icon?family=Material+Icons"
+	  rel="stylesheet"
+	/>
+	<link rel="stylesheet" href="css/style.css?v=1.0" />
+  </head>
+
+  <body>
+	<nav>
+	  <div class="nav-wrapper #ba68c8 purple lighten-2">
+		<a href="#!" class="brand-logo center"
+		  >Codificação de Sinais Multimídia</a
+		>
+		<a href="#" data-target="mobile-demo" class="sidenav-trigger"
+		  ><i class="material-icons">menu</i></a
+		>
+		<ul class="right hide-on-med-and-down">
+		  <li><a href="../index.html">Página Inicial</a></li>
+		</ul>
+	  </div>
+	</nav>
+
+	<ul class="sidenav" id="mobile-demo">
+	  <li><a href="index.html">Página Inicial</a></li>
+	</ul>
+
+	<center>
+	  <p>Audiodescrição</p>
+	  <audio controls>
+		<source src="audio/audiodescricao_lab7.mp3" type="audio/mpeg" />
+		Your browser does not support the audio element.
+	  </audio>
+	</center>
+
+	<div class="section white">
+	  <div class="row container">
+
+		<center>
+		  <h2 class="header">Laboratório 7:</h2>
+		  <h3 class="header">Codificação de Voz</h3>
+		</center>
+
+		<p>
+			Neste laboratório, a equipe utilizou um conjunto de áudios gravados 
+			para realizar análises de processamento digital de sinais em espectros de voz. 
+			No fim da página, é disponibilizado o Jupyter Notebook utilizado para a 
+			realização deste experimento.
+		</p>
+
+		<h4 style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-family:"Calibri",sans-serif;'>
+			<span style="font-family: Calibri, sans-serif;">1. Grava&ccedil;&atilde;o dos arquivos de &aacute;udio</span>
+		</h4>
+
+
+		<p style="margin: 0cm 0cm 8pt; line-height: 107%; font-size: 15px; font-family: Calibri, sans-serif; text-align: justify;">
+			<span style="font-family: Calibri, sans-serif;">
+				Inicialmente, forneceu-se um arquivo de áudio com a declamação de 
+				um dos versos da canção Vambora (Adriana Calcanhoto) em forma de poesia  
+				para que a equipe pudesse se basear. Posteriormente, 
+				realizou-se a captura de &aacute;udio utilizando o software Audacity, 
+				por cada um dos integrantes do grupo, repetindo a poesia declamada. 
+				Essas foram as grava&ccedil;&otilde;es:
+			</span>
+		</p>
+
+		<center>
+			<p>Áudio fornecido</p>
+			<audio controls>
+				<source src="audio/Entre_Leva_Catia_Falada.wav" type="audio/wav" />
+				Your browser does not support the audio element.
+			</audio>
+
+			<p>Dimitri</p>
+			<audio controls>
+				<source src="audio/dimitri4.wav" type="audio/wav" />
+				Your browser does not support the audio element.
+			</audio>
+
+			<p>Matheus</p>
+			<audio controls>
+				<source src="audio/matheus4.wav" type="audio/wav" />
+				Your browser does not support the audio element.
+			</audio>
+
+			<p>William</p>
+			<audio controls>
+				<source src="audio/william4.wav" type="audio/wav" />
+				Your browser does not support the audio element.
+			</audio>
+		</center>
+
+		<br><br>
+
+		<h3 style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-family:"Calibri",sans-serif;'><span style="font-family: Calibri, sans-serif;">Anexo: Jupyter Notebook</span></h3>
+
+
+		<p>
+			Abaixo, exibe-se o Jupyter elaborado pela equipe. Caso tenha problemas para carregá-lo, 
+			<a href="https://github.com/dwm-multimidia/dwm-multimidia.github.io/blob/master/lab7/jupyter/Lab7_CodificacaoVoz_v2.ipynb">
+				clique aqui
+			</a>.
+		</p>
+
+		<center>
+		  <script src="https://gist.github.com/Mathcd/9a06503f52a1c553a63819f979dfbd5b.js"></script>  
+		</center>
+
+	  </div>
+	</div>
+
+	<!-- your content here... -->
+	<script src="js/index.js"></script>
+	<!-- Compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </body>
+</html>
