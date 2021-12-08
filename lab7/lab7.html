@@ -69,11 +69,12 @@
 			realização deste experimento.
 		</p>
 
+		<!-------------------------------------------------->
+		<!-------------------------------------------------->
+		<!-------------------------------------------------->
 		<h4 style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-family:"Calibri",sans-serif;'>
 			<span style="font-family: Calibri, sans-serif;">1. Grava&ccedil;&atilde;o dos arquivos de &aacute;udio</span>
 		</h4>
-
-
 		<p style="margin: 0cm 0cm 8pt; line-height: 107%; font-size: 15px; font-family: Calibri, sans-serif; text-align: justify;">
 			<span style="font-family: Calibri, sans-serif;">
 				Inicialmente, forneceu-se um arquivo de áudio com a declamação de 
@@ -84,7 +85,6 @@
 				Essas foram as grava&ccedil;&otilde;es:
 			</span>
 		</p>
-
 		<center>
 			<p>Áudio fornecido</p>
 			<audio controls>
@@ -111,10 +111,18 @@
 			</audio>
 		</center>
 
+		<!-------------------------------------------------->
+		<!-------------------------------------------------->
+		<!-------------------------------------------------->
+		<h4 style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-family:"Calibri",sans-serif;'>
+			<span style="font-family: Calibri, sans-serif;">2. Importação dos arquivos de &aacute;udio</span>
+		</h4>
 		<br><br>
 		<p style="margin: 0cm 0cm 8pt; line-height: 107%; font-size: 15px; font-family: Calibri, sans-serif; text-align: justify;">
 			<span style="font-family: Calibri, sans-serif;">
-				Comentário...
+				Nessa etapa os arquivos gravados foram importados como vetores utilizando a biblioteca Librosa, 
+				bem como sua respectiva taxa de amostragem. A seguir são apresentados os plots dos sinais de áudio 
+				no tempo para cada uma das gravações.
 			</span>
 		</p>
 		<center>
@@ -123,11 +131,13 @@
 			<img src="images/matheus4_0.png"/><br/>
 			<img src="images/william4_0.png"/><br/>
 		</center>
-
 		<br><br>
 		<p style="margin: 0cm 0cm 8pt; line-height: 107%; font-size: 15px; font-family: Calibri, sans-serif; text-align: justify;">
 			<span style="font-family: Calibri, sans-serif;">
-				Comentário...
+				Para realizar as anílses que se seguirão neste documento, a equipe realizou 
+				uma separação em cada um dos áudios para que apenas a primeira estrofe do poema 
+				fosse selecionada. Abaixo, seguem-se os plots no domínio do tempo dos sinais separados
+				como descrito.
 			</span>
 		</p>
 		<center>
@@ -137,10 +147,17 @@
 			<img src="images/william4_primeiraEstrofe.png"/><br/>
 		</center>
 
+		<!-------------------------------------------------->
+		<!-------------------------------------------------->
+		<!-------------------------------------------------->
+		<h4 style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-family:"Calibri",sans-serif;'>
+			<span style="font-family: Calibri, sans-serif;">3. Energia dos arquivos de &aacute;udio</span>
+		</h4>
 		<br><br>
 		<p style="margin: 0cm 0cm 8pt; line-height: 107%; font-size: 15px; font-family: Calibri, sans-serif; text-align: justify;">
 			<span style="font-family: Calibri, sans-serif;">
-				Comentário...
+				Assim como realizado no laboratório anterior, 6, a equipe determinou o contorno de energia dos sinais
+				separados em decibéis (dB) em função dos segmentos, verificado nas figuras a seguir:
 			</span>
 		</p>
 		<center>
@@ -150,10 +167,21 @@
 			<img src="images/william4_energia.png"/><br/>
 		</center>
 
+		<!-------------------------------------------------->
+		<!-------------------------------------------------->
+		<!-------------------------------------------------->
+		<h4 style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-family:"Calibri",sans-serif;'>
+			<span style="font-family: Calibri, sans-serif;">4. Separação sonora e surda</span>
+		</h4>
 		<br><br>
 		<p style="margin: 0cm 0cm 8pt; line-height: 107%; font-size: 15px; font-family: Calibri, sans-serif; text-align: justify;">
 			<span style="font-family: Calibri, sans-serif;">
-				Comentário...
+				Nesta etapa, a equipe realizou a separação sonora/surda da primeira estrofe de cada 
+				áudio exibido no início deste documento. Ao mesmo tempo, realizaram-se os cálculos dos 
+				parâmetros LPC, separação U/UV e Espectro + Envoltória LPC. Esses parâmetros 
+				serão exibidos mais adiante em uma tabela que os comparará para cada áudio utilizado.
+				<br/><br/>
+				Segmentos sonoros:
 			</span>
 		</p>
 		<center>
@@ -162,11 +190,10 @@
 			<img src="images/matheus4_segmentosSonoros.png" width="1000"/><br/><br/><br/>
 			<img src="images/william4_segmentosSonoros.png" width="1000"/><br/><br/><br/>
 		</center>
-
 		<br><br>
 		<p style="margin: 0cm 0cm 8pt; line-height: 107%; font-size: 15px; font-family: Calibri, sans-serif; text-align: justify;">
 			<span style="font-family: Calibri, sans-serif;">
-				Comentário...
+				Segmentos surdos:
 			</span>
 		</p>
 		<center>
@@ -176,11 +203,21 @@
 			<img src="images/william4_segmentosSurdos.png" width="1000"/><br/><br/><br/>
 		</center>
 
+		<!-------------------------------------------------->
+		<!-------------------------------------------------->
+		<!-------------------------------------------------->
+		<h4 style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-family:"Calibri",sans-serif;'>
+			<span style="font-family: Calibri, sans-serif;">6. Cálculo dos Parâmetros LPC, separação U/UV e Espectro + Envoltória LPC</span>
+		</h4>
 		<center>
 			<br><br>
 		<p style="margin: 0cm 0cm 8pt; line-height: 107%; font-size: 15px; font-family: Calibri, sans-serif; text-align: justify;">
 			<span style="font-family: Calibri, sans-serif;">
-				Comentário...
+				Verifica-se, abaixo, um atabela que compara os parâmetros mencionados em relação a cada áudio
+				utilizado nesta atividade.
+				<br/>
+				O áudio disponibilizado apresentou os parâmetros VAD e U/UV bem abaixo dos áudios gravados pela
+				equipe.
 			</span>
 		</p>
 		<style type="text/css">
@@ -236,11 +273,19 @@
 			</tbody>
 		</table>
 		</center>
+		<br/><br/><br/><br/><br/>
 
+		<!-------------------------------------------------->
+		<!-------------------------------------------------->
+		<!-------------------------------------------------->
+		<h4 style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-family:"Calibri",sans-serif;'>
+			<span style="font-family: Calibri, sans-serif;">7. Trajetória da f0 com a ultilização do algoritmo pYIN</span>
+		</h4>
 		<br><br>
 		<p style="margin: 0cm 0cm 8pt; line-height: 107%; font-size: 15px; font-family: Calibri, sans-serif; text-align: justify;">
 			<span style="font-family: Calibri, sans-serif;">
-				Comentário...
+				Abaixo, verificam-se os plots que mostram a trajetória de f0 com a utilização do algoritmo
+				pYIN para cada áudio utilizado.
 			</span>
 		</p>
 		<center>
@@ -250,10 +295,16 @@
 			<img src="images/william4_trajetoriaF0PYIN.png"/><br/>
 		</center>
 
+		<!-------------------------------------------------->
+		<!-------------------------------------------------->
+		<!-------------------------------------------------->
+		<h4 style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-family:"Calibri",sans-serif;'>
+			<span style="font-family: Calibri, sans-serif;">8. Trajetória do pitch</span>
+		</h4>
 		<br><br>
 		<p style="margin: 0cm 0cm 8pt; line-height: 107%; font-size: 15px; font-family: Calibri, sans-serif; text-align: justify;">
 			<span style="font-family: Calibri, sans-serif;">
-				Comentário...
+				Assim como antes, abaixo, verificam-se os plots que mostram a trajetória do pitch para cada áudio utilizado.
 			</span>
 		</p>
 		<center>
@@ -263,10 +314,16 @@
 			<img src="images/william4_trajetoriaPitch.png"/><br/>
 		</center>
 
+		<!-------------------------------------------------->
+		<!-------------------------------------------------->
+		<!-------------------------------------------------->
+		<h4 style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:107%;font-family:"Calibri",sans-serif;'>
+			<span style="font-family: Calibri, sans-serif;">9. Estimativa da frenquência f0 fundamental</span>
+		</h4>
 		<br><br>
 		<p style="margin: 0cm 0cm 8pt; line-height: 107%; font-size: 15px; font-family: Calibri, sans-serif; text-align: justify;">
 			<span style="font-family: Calibri, sans-serif;">
-				Comentário...
+				Abaixo, um espectrograma para cada áudio utilizado mostrando a estimativa da frequência f0 fundamental.
 			</span>
 		</p>
 		<center>
